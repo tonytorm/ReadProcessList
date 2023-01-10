@@ -5,6 +5,16 @@
 #include <strsafe.h>
 
 
+/* Definitions used to enumerate handles */
+#define NT_SUCCESS(x) ((signed int)(x) >= 0)
+#define STATUS_INFO_LENGTH_MISMATCH 0xc0000004
+#define SystemHandleInformation 16
+#define ProcessHandleInformation 0x33
+#define ObjectBasicInformation 0
+#define ObjectNameInformation 1
+#define BUFSIZE 512
+#define ObjectTypeInformation 2
+
 /* Structures retrieved and queried during handle enumeration */
 typedef NTSTATUS(NTAPI* _NtQuerySystemInformation)(
 	ULONG SystemInformationClass,
