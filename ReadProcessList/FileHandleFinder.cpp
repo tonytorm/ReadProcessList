@@ -3,6 +3,7 @@
 #include <Psapi.h>
 #include <tchar.h>
 #include <strsafe.h>
+#include <winternl.h>
 
 
 /* Definitions used to enumerate handles */

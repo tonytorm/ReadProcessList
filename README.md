@@ -1,0 +1,1 @@
+A simple app that allows you to retrieve file handles from a specified WIN32 process, it took a bit of research to put this code together so I guess someone else might find it useful.
